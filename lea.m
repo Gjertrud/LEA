@@ -1,7 +1,7 @@
 function [VND, IC50, DMAX, VS] = lea(VTbase,VTblock,plasmaDrug,S,startVals)
-% Estimates personal VND and global IC50 and max occupancy values for a
-% dataset of baseline and block scans for N subjects using Likelihood 
-% Estimation of Affinity (LEA). 
+% Estimates personal VND and VS values, and global IC50 and max occupancy 
+% values for a dataset of baseline and block scans for N subjects using 
+% Likelihood Estimation of Affinity (LEA). 
 % 
 % Inputs: 
 %   VTbase:     kxN array of baseline VTs in k ROIs for N subjects 
@@ -19,6 +19,7 @@ function [VND, IC50, DMAX, VS] = lea(VTbase,VTblock,plasmaDrug,S,startVals)
 %   VND:        1xN array of estimated VND values
 %   IC50:       estimated population IC_50
 %   DMAX:       estimated population D_max 
+%   VS:         kxN array of estimated VS values 
 %
 %--------------------------------------------------------------------------
 %                                              	Gjertrud Louise Laurell
